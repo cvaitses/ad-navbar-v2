@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>AD Navbar V2</title>
+</head>
+<body>
+  <!-- nav container -->
+  <nav class="relative mx-auto p-6 bg-seafoamLight">
+    <!-- flex container -->
+    <div class="flex items-center justify-between">
+      <!-- flex container for title/menu -->
+      <div class="flex items-center space-x-20">
+        <!-- title container -->
+        <div class="pt-2 h-[50px] w-[200px] md:w-[180px] text-center mx-auto my-auto">
+          <a href="" class="text-orange font-bold text-2xl">Amlaw Design</a>
+        </div>
+        <!-- left menu -->
+        <div class="hidden space-x-8 font-bold md:flex">
+          <a href="" class="text-oceanblue hover:text-gray-500">Portfolio</a>
+          <a href="" class="text-oceanblue hover:text-gray-500">About</a>
+          <a href="" class="text-oceanblue hover:text-gray-500">Contact</a>
+        </div>
+      </div>
+
+      <!-- right menu -->
+      <div class="hidden items-center space-x-6 text-oceanblue md:flex">
+        <a href="" class="hover:text-orange font-bold">Sign-Up</a>
+        <a href="" class="px-8 py-3 font-bold text-white bg-orange rounded-full hover:opacity-70">Login</a>
+      </div>
+
+      <!-- hamburger menu -->
+      <button id="menu-btn" class="block hamburger md:hidden focus:outline-none" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="menu" class="absolute hidden p-6 rounded-lg bg-seafoamLight left-6 right-6 top-20 z-100">
+      <div class="flex flex-col items-center justify-center w-full space-y-3 font-bold text-oceanblue rounded-sm">
+        <a href="" class="w-full text-center bg-white rounded-full py-2">Portfolio</a>
+        <a href="" class="w-full text-center bg-white rounded-full py-2">About</a>
+        <a href="" class="w-full text-center bg-white rounded-full py-2">Contact</a>
+        <a href="" class="w-full text-center bg-white rounded-full py-2">Sign-Up</a>
+        <a href="" class="w-full text-center bg-white rounded-full py-2">Login</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
